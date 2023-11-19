@@ -8,7 +8,7 @@ import { useState } from "react";
 import { songSelect } from "../../state/app";
 
 const Comp = (props) => {
-  // console.log('songs:', songs);
+  console.log('songs:', songs);
   const [currentSongIndex, setCurrentSongIndex] = useState(
     props.currentSongNumber
   );
