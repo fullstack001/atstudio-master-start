@@ -1,0 +1,119 @@
+.blue-bg {
+    width: 100%;
+    height: 300px;
+    background-color: #009faa;
+    color: white;
+    padding-top: 70px;
+}
+
+.lbtn {
+    border-radius: 50px;
+    // height: 30px;
+    text-align: center;
+    width: 230px;
+    padding: 5px !important;
+    margin: 2px 5px !important;
+
+
+}
+
+.sbtn {
+    &:not(:disabled):not(.diabled) {
+        cursor: pointer;
+    }
+
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: capitalize;
+    // font-size: 1rem;
+    font-weight: 500;
+    vertical-align: middle;
+    user-select: none;
+    padding: 0px 1rem;
+    border-radius: var(--size-1);
+    height: 48px;
+    // line-height: 48px;
+    border: none;
+    background-color: var(--c-primary-main);
+    color: var(--c-white);
+    transition: all 250ms;
+    outline: 0;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+        background-color: var(--c-primary-dark);
+        text-decoration: none;
+    }
+}
+
+.alafasy-title {
+    color: white !important;
+}
+
+.list-group {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    padding: 20px;
+    // margin-bottom: -1px;
+    background-color: #fff;
+    // border: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.progress-bar {
+    display: block;
+    width: 100% !important;
+    margin: 1px 5px 30px 5px;
+}
+
+input[type='range'] {
+    display: block;
+    width: 100% !important;
+}
+
+.sticky-player {
+    border: #e4e7e7 1px solid;
+    border-radius: 15px;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    padding: 15px;
+    bottom: 0px;
+    background: #fff;
+    z-index: 11;
+}
+
+.audio-btn {
+    margin: 10px;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+
+
+}
+
+#play-btn {
+    background-color: #009faa;
+}
+
+svg {
+    fill: currentColor;
+    height: 32px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .space {
+        display: none;
+    }
+
+    .control-btn {
+        // display: none;
+        display: block;
+        width: 100%;
+    }
+}
